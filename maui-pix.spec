@@ -11,6 +11,7 @@ Group:		Applications/Productivity
 BuildRequires:	cmake
 BuildRequires:	ninja
 BuildRequires:	cmake(ECM)
+BuildRequires:  cmake(Qt5Positioning)
 BuildRequires:	cmake(Qt5Qml)
 BuildRequires:	cmake(Qt5Quick)
 BuildRequires:	cmake(Qt5Sql)

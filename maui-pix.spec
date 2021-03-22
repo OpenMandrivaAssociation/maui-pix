@@ -2,7 +2,7 @@
 #define commit 4e63f888fd94a8ab682daf523228357bf291a41c
 
 Name:		maui-pix
-Version:	1.1.1
+Version:	1.2.1
 Release:	%{?snapshot:0.%{snapshot}.}1
 Summary:	Image gallery manager for Plasma Mobile
 Source0:	https://invent.kde.org/maui/pix/-/archive/v%{version}/pix-v%{version}.tar.bz2

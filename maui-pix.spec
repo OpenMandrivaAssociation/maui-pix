@@ -25,6 +25,7 @@ BuildRequires:	cmake(KF5KIO)
 BuildRequires:	cmake(KF5Attica)
 BuildRequires:	cmake(MauiKit)
 BuildRequires:  cmake(MauiKitFileBrowsing)
+BuildRequires:  cmake(MauiKitImageTools)
 BuildRequires:	cmake(PkgConfig)
 BuildRequires:	cmake(Threads)
 

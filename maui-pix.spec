@@ -1,6 +1,3 @@
-#define snapshot 20200710
-#define commit 4e63f888fd94a8ab682daf523228357bf291a41c
-
 Name:		maui-pix
 Version:	2.1.0
 Release:	%{?snapshot:0.%{snapshot}.}1
@@ -28,6 +25,7 @@ BuildRequires:  cmake(MauiKitFileBrowsing)
 BuildRequires:  cmake(MauiKitImageTools)
 BuildRequires:	cmake(PkgConfig)
 BuildRequires:	cmake(Threads)
+BuildRequires:  pkgconfig(exiv2)
 
 %description
 Image gallery manager for Plasma Mobile

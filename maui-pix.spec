@@ -1,8 +1,10 @@
+%define snapshot 20220107
+
 Name:		maui-pix
-Version:	2.1.0
+Version:	2.1.1
 Release:	%{?snapshot:0.%{snapshot}.}1
 Summary:	Image gallery manager for Plasma Mobile
-Source0:	https://invent.kde.org/maui/pix/-/archive/v%{version}/pix-v%{version}.tar.bz2
+Source0:	https://invent.kde.org/maui/pix/-/archive/%{?snapshot:master/pix-master.tar.bz2#/pix-%{snapshot}}%{!?snapshot:v%{version}/pix-v%{version}}.tar.bz2
 License:	GPLv3
 Group:		Applications/Productivity
 BuildRequires:	cmake
@@ -31,7 +33,7 @@ BuildRequires:  pkgconfig(exiv2)
 Image gallery manager for Plasma Mobile
 
 %prep
-%autosetup -p1 -n pix-v%{version}
+%autosetup -p1 -n pix-%{?snapshot:master}%{!?snapshot:v%{version}}
 %cmake_kde5 -G Ninja
 
 %build

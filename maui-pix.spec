@@ -44,7 +44,9 @@ Image gallery manager for Plasma Mobile
 %install
 %ninja_install -C build
 
-%files
+%find_lang pix
+
+%files -f pix.lang
 %{_bindir}/pix
 %{_datadir}/applications/org.kde.pix.desktop
 %{_datadir}/icons/hicolor/scalable/apps/pix.svg

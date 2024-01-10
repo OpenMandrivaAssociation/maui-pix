@@ -1,9 +1,10 @@
 #define snapshot 20220107
 
 Name:		maui-pix
-Version:	3.0.0
+Version:	3.0.2
 Release:	%{?snapshot:0.%{snapshot}.}1
 Summary:	Image gallery manager for Plasma Mobile
+Url:      https://invent.kde.org/maui/pix/
 Source0:	https://invent.kde.org/maui/pix/-/archive/%{?snapshot:master/pix-master.tar.bz2#/pix-%{snapshot}}%{!?snapshot:v%{version}/pix-v%{version}}.tar.bz2
 License:	GPLv3
 Group:		Applications/Productivity
@@ -23,10 +24,9 @@ BuildRequires:	cmake(KF5Config)
 BuildRequires:	cmake(KF5CoreAddons)
 BuildRequires:	cmake(KF5KIO)
 BuildRequires:	cmake(KF5Attica)
-BuildRequires:	cmake(MauiKit)
-BuildRequires:  cmake(MauiKitFileBrowsing)
-BuildRequires:  cmake(MauiKitImageTools)
-BuildRequires:  cmake(MauiKitImageTools)
+BuildRequires:	cmake(MauiKit3)
+BuildRequires:  cmake(MauiKitFileBrowsing3)
+BuildRequires:  cmake(MauiKitImageTools3)
 BuildRequires:	cmake(PkgConfig)
 BuildRequires:	cmake(Threads)
 BuildRequires:  pkgconfig(exiv2)

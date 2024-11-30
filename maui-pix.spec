@@ -12,6 +12,7 @@ BuildRequires:	cmake
 BuildRequires:	ninja
 BuildRequires:	cmake(ECM)
 BuildRequires:  cmake(Qt6Positioning)
+BuildRequires:  cmake(Qt6Concurrent)
 BuildRequires:	cmake(Qt6Qml)
 BuildRequires:	cmake(Qt6Quick)
 BuildRequires:	cmake(Qt6Sql)

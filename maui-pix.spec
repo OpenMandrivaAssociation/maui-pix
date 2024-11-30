@@ -1,32 +1,32 @@
 #define snapshot 20220107
 
 Name:		maui-pix
-Version:	3.1.0
+Version:	4.0.0
 Release:	%{?snapshot:0.%{snapshot}.}1
 Summary:	Image gallery manager for Plasma Mobile
 Url:      https://invent.kde.org/maui/pix/
-Source0:	https://invent.kde.org/maui/pix/-/archive/%{?snapshot:master/pix-master.tar.bz2#/pix-%{snapshot}}%{!?snapshot:v%{version}/pix-v%{version}}.tar.bz2
+Source0:	https://invent.kde.org/maui/pix/-/archive/%{?snapshot:master/maui-pix-master.tar.bz2#/pix-%{snapshot}}%{!?snapshot:v%{version}/maui-pix-v%{version}}.tar.bz2
 License:	GPLv3
 Group:		Applications/Productivity
 BuildRequires:	cmake
 BuildRequires:	ninja
 BuildRequires:	cmake(ECM)
-BuildRequires:  cmake(Qt5Positioning)
-BuildRequires:	cmake(Qt5Qml)
-BuildRequires:	cmake(Qt5Quick)
-BuildRequires:	cmake(Qt5Sql)
-BuildRequires:	cmake(Qt5Svg)
-BuildRequires:	cmake(Qt5QuickControls2)
-BuildRequires:	cmake(Qt5Widgets)
-BuildRequires:	cmake(KF5I18n)
-BuildRequires:	cmake(KF5Notifications)
-BuildRequires:	cmake(KF5Config)
-BuildRequires:	cmake(KF5CoreAddons)
-BuildRequires:	cmake(KF5KIO)
-BuildRequires:	cmake(KF5Attica)
-BuildRequires:	cmake(MauiKit3)
-BuildRequires:  cmake(MauiKitFileBrowsing3)
-BuildRequires:  cmake(MauiKitImageTools3)
+BuildRequires:  cmake(Qt6Positioning)
+BuildRequires:	cmake(Qt6Qml)
+BuildRequires:	cmake(Qt6Quick)
+BuildRequires:	cmake(Qt6Sql)
+BuildRequires:	cmake(Qt6Svg)
+BuildRequires:	cmake(Qt6QuickControls2)
+BuildRequires:	cmake(Qt6Widgets)
+BuildRequires:	cmake(KF6I18n)
+BuildRequires:	cmake(KF6Notifications)
+BuildRequires:	cmake(KF6Config)
+BuildRequires:	cmake(KF6CoreAddons)
+BuildRequires:	cmake(KF6KIO)
+BuildRequires:	cmake(KF6Attica)
+BuildRequires:	cmake(MauiKit4)
+BuildRequires:  cmake(MauiKitFileBrowsing4)
+BuildRequires:  cmake(MauiKitImageTools4)
 BuildRequires:	cmake(PkgConfig)
 BuildRequires:	cmake(Threads)
 BuildRequires:  pkgconfig(exiv2)
@@ -35,7 +35,7 @@ BuildRequires:  pkgconfig(exiv2)
 Image gallery manager for Plasma Mobile
 
 %prep
-%autosetup -p1 -n pix-%{?snapshot:master}%{!?snapshot:v%{version}}
+%autosetup -p1 -n maui-pix-%{?snapshot:master}%{!?snapshot:v%{version}}
 %cmake_kde5 -G Ninja
 
 %build

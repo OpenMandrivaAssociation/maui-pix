@@ -1,7 +1,7 @@
 #define snapshot 20220107
 
 Name:		maui-pix
-Version:	4.0.0
+Version:	4.0.1
 Release:	%{?snapshot:0.%{snapshot}.}1
 Summary:	Image gallery manager for Plasma Mobile
 Url:      https://invent.kde.org/maui/pix/
